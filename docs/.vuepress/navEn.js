@@ -1,14 +1,13 @@
 module.exports = [
-  { text: 'Home', link: '/en/' },
+  { text: 'Blog', link: '/en/blog/' },
   { text: 'Repository', link: '/en/repository/' },
   { text: 'Website', link: '/en/website/' },
+  { text: 'Interview', link: '/en/interview/' },
   {
     text: 'Article',
     items: [
       { text: 'IT', link: '/en/article/IT/' },
       { text: 'other', link: '/en/article/other/' }
     ]
-  },
-  { text: 'Interview', link: '/en/interview/' },
-  { text: 'Blog', link: '/en/blog/' }
+  }
 ]

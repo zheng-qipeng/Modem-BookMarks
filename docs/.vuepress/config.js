@@ -13,12 +13,12 @@ module.exports = {
     '/': {
       lang: 'zh-CN',
       title: 'modem-bookmarks',
-      description: '个人收藏夹 beta'
+      description: '种一棵树最好的时间是十年前  其次是现在'
     },
     '/en/': {
       lang: 'en-US',
       title: 'modem-bookmarks',
-      description: 'personal favorites beta'
+      description: 'The best time to plant a tree is twenty years ago  The second-best time is now'
     }
   },
   themeConfig: {
@@ -70,12 +70,15 @@ module.exports = {
     lineNumbers: undefined, // 是否在每个代码块的左侧显示行号
     externalLinks: { target: '_blank', rel: 'noopener noreferrer' } // 这个键值对将会作为特性被增加到是外部链接的 <a> 标签上，默认的选项将会在新窗口中打开一个该外部链接
   },
-  configureWebpack: {
-    resolve: {
-      alias: {
-        '@pubilc': './pubilc'
-      }
-    }
-  },
-  evergreen: true // 如果你的对象只有那些 “常青树” 浏览器，你可以将其设置成 true，这将会禁止 ESNext 到 ES5 的转译以及对 IE 的 polyfills，同时会带来更快的构建速度和更小的文件体积
+  // configureWebpack: {
+  //   resolve: {
+  //     alias: {
+  //       '@pubilc': './pubilc'
+  //     }
+  //   }
+  // },
+  evergreen: true, // 如果你的对象只有那些 “常青树” 浏览器，你可以将其设置成 true，这将会禁止 ESNext 到 ES5 的转译以及对 IE 的 polyfills，同时会带来更快的构建速度和更小的文件体积
+  plugins: [ // 小猫
+    "vuepress-plugin-cat",
+  ]
 }
