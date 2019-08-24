@@ -5,7 +5,7 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/image/favicon.ico' }],
     ['link', { rel: 'stylesheet', href: '/css/style.css' }],
-	// ['link', { rel: 'manifest', href: '/manifest.json' }]
+    ['script', { type: 'text/javascript', src: '/js/script.js' }],
   ],
   host: '0.0.0.0', // dev server 的主机名
   port: 8080, // dev server 的端口
