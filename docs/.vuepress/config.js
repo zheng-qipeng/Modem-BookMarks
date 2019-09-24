@@ -4,7 +4,7 @@ module.exports = {
   base: '/modem-bookmarks/',
   head: [
     ['link', { rel: 'icon', href: '/image/favicon.ico' }],
-    ['link', { rel: 'stylesheet', href: '/css/style.css' }],
+    // ['link', { rel: 'stylesheet', href: '/css/style.css' }],
     ['script', { type: 'text/javascript', src: '/js/script.js' }],
   ],
   host: '0.0.0.0', // dev server 的主机名
@@ -45,7 +45,7 @@ module.exports = {
       // =============================================== English
       '/en/': {
         selectText: 'Languages',
-        label: 'English',
+        label: 'English(暂时不更//)',
         editLinkText: 'Edit this page on GitHub',
         serviceWorker: {
           updatePopup: {
@@ -59,7 +59,8 @@ module.exports = {
         lastUpdated: 'Last Updated', // string | boolean
       }
     },
-    sidebarDepth: 3,
+    sidebarDepth: 2,
+    // displayAllHeaders: true, // 默认值：false
     repo: 'zheng-qipeng/modem-bookmarks',
     repoLabel: 'GitHub',
     docsDir: 'docs',
@@ -77,8 +78,10 @@ module.exports = {
   //     }
   //   }
   // },
-  evergreen: true, // 如果你的对象只有那些 “常青树” 浏览器，你可以将其设置成 true，这将会禁止 ESNext 到 ES5 的转译以及对 IE 的 polyfills，同时会带来更快的构建速度和更小的文件体积
-  plugins: [ // 小猫
-    "vuepress-plugin-cat",
+  // evergreen: true, // 如果你的对象只有那些 “常青树” 浏览器，你可以将其设置成 true，这将会禁止 ESNext 到 ES5 的转译以及对 IE 的 polyfills，同时会带来更快的构建速度和更小的文件体积
+  plugins: [
+    "vuepress-plugin-cat", // 小猫
+    '@vuepress/active-header-links', // 页面滚动时自动激活侧边栏链接的插件(官方)
+    '@vuepress/back-to-top' // back-to-top 插件(官方)
   ]
 }

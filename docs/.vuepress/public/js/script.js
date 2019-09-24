@@ -27,5 +27,26 @@ window.onload = function () {
     setTimeout(function () {
       document.getElementsByTagName('canvas')[document.getElementsByTagName('canvas').length - 1].style.pointerEvents = 'none'
     }, 666)
+    myTitle()
   }
+  
+  function myTitle () {
+    let title = ''
+    // 监听 visibility change 事件
+    document.addEventListener('visibilitychange', function () {
+      const title1 = '去哪 轮家等着你呢'
+      const title2 = '终于回来了啊'
+      var isHidden = document.hidden
+      if (isHidden) {
+        title === title2 ? '' : title = document.title
+        document.title = title1
+      } else {
+        document.title = title2
+        setTimeout(function () {
+          document.title = title
+        }, 1000)
+      }
+    })
+  }
+
 }
