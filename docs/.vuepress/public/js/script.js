@@ -29,20 +29,22 @@ window.onload = function () {
     }, 666)
     myTitle()
   }
-  
+
   function myTitle () {
     let title = ''
+    let timer = null // 定时器
     // 监听 visibility change 事件
     document.addEventListener('visibilitychange', function () {
       const title1 = '去哪 轮家等着你呢'
       const title2 = '终于回来了啊'
-      var isHidden = document.hidden
+      let isHidden = document.hidden
+      if (document.title !== title1 && document.title !== title2) title = document.title
+      if (timer) clearTimeout(timer) // 节流
       if (isHidden) {
-        title === title2 ? '' : title = document.title
         document.title = title1
       } else {
         document.title = title2
-        setTimeout(function () {
+        timer = setTimeout(function () {
           document.title = title
         }, 1000)
       }

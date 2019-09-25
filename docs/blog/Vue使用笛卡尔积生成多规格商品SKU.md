@@ -5,7 +5,7 @@
 
  &emsp;&emsp;之前做b2c商城后台管理系统的时候，有个添加商品多规格的需求，让商家根据不同的商品编辑自定义规格和参数，参考图片：
 
-![Vue使用笛卡尔积生成多规格商品SKU](/image/Vue使用笛卡尔积生成多规格商品SKU/参考图片.png)
+![Vue使用笛卡尔积生成多规格商品SKU](/modem-bookmarks/image/Vue使用笛卡尔积生成多规格商品SKU/参考图片.png)
 
 &emsp;&emsp;比如手机商品，有颜色、版本、购买方式、套餐，四种不同规格，如果一个个让商家输入的话，岂不是太不符合人性化了；
 经过一阵手忙脚乱，试写了demo，功能可以大致实现，就是数据有些混乱，突然，公司的后端大哥在身后拍了拍我肩膀，提示我“笛卡尔积”算法，说完发我一个用vue实现商品sku生成的案例网址，匆忙py感谢之后，立马下载案例 => npm install => npm run dev，虽然运行出来的结果没有达到期待，只能实现固定两种规格生成，但重点是“笛卡尔积”提示了我该如何做出来这个需求。
@@ -157,15 +157,15 @@ export default {
 
 ## 添加规格的图片展示
 
-![Vue使用笛卡尔积生成多规格商品SKU](/image/Vue使用笛卡尔积生成多规格商品SKU/添加规格.png)
+![Vue使用笛卡尔积生成多规格商品SKU](/modem-bookmarks/image/Vue使用笛卡尔积生成多规格商品SKU/添加规格.png)
 
 ## 提交结果的图片展示
 
-![Vue使用笛卡尔积生成多规格商品SKU](/image/Vue使用笛卡尔积生成多规格商品SKU/提交图片1.png)
-![Vue使用笛卡尔积生成多规格商品SKU](/image/Vue使用笛卡尔积生成多规格商品SKU/提交图片2.png)
-![Vue使用笛卡尔积生成多规格商品SKU](/image/Vue使用笛卡尔积生成多规格商品SKU/提交图片3.png)
-![Vue使用笛卡尔积生成多规格商品SKU](/image/Vue使用笛卡尔积生成多规格商品SKU/提交图片4.png)
-![Vue使用笛卡尔积生成多规格商品SKU](/image/Vue使用笛卡尔积生成多规格商品SKU/提交图片5.png)
+![Vue使用笛卡尔积生成多规格商品SKU](/modem-bookmarks/image/Vue使用笛卡尔积生成多规格商品SKU/提交图片1.png)
+![Vue使用笛卡尔积生成多规格商品SKU](/modem-bookmarks/image/Vue使用笛卡尔积生成多规格商品SKU/提交图片2.png)
+![Vue使用笛卡尔积生成多规格商品SKU](/modem-bookmarks/image/Vue使用笛卡尔积生成多规格商品SKU/提交图片3.png)
+![Vue使用笛卡尔积生成多规格商品SKU](/modem-bookmarks/image/Vue使用笛卡尔积生成多规格商品SKU/提交图片4.png)
+![Vue使用笛卡尔积生成多规格商品SKU](/modem-bookmarks/image/Vue使用笛卡尔积生成多规格商品SKU/提交图片5.png)
 
 ## Demo
 
