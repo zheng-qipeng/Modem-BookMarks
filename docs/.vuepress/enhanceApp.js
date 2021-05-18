@@ -19,6 +19,6 @@ export default ({
       copy()
     })()
   } catch (e) {
-    console.error(e.message)
+    console.error(e.message, '???')
   }
 }
