@@ -1,6 +1,8 @@
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import copy from './public/js/copy' //复制
+import documentTitle from './public/js/document-title' // 变换标题
+import canvas from './public/js/canvas' // 流动的canvas点
+import copy from './public/js/copy' // 复制操作
 
 export default ({
   Vue, // VuePress 正在使用的 Vue 构造函数
@@ -10,13 +12,13 @@ export default ({
 }) => {
   // ...做一些其他的应用级别的优化
   Vue.use(Element)
-  setTimeout(() => {
-    try {
-      document && (() => { //对document的判断是防止编译的时候报错
-        copy()
-      })()
-    } catch (e) {
-      console.error(e.message)
-    }
-  }, 500)
+  try {
+    document && (() => { //对document的判断是防止编译的时候报错
+      documentTitle()
+      canvas()
+      copy()
+    })()
+  } catch (e) {
+    console.error(e.message)
+  }
 }

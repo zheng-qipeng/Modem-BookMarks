@@ -4,8 +4,6 @@ module.exports = {
   base: '/modem-bookmarks/',
   head: [
     ['link', { rel: 'icon', href: '/image/favicon.ico' }],
-    // ['link', { rel: 'stylesheet', href: '/css/style.css' }],
-    ['script', { type: 'text/javascript', src: '/js/script.js' }],
   ],
   host: '0.0.0.0', // dev server 的主机名
   port: 8080, // dev server 的端口
