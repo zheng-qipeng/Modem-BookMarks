@@ -4,6 +4,9 @@ module.exports = {
   base: '/modem-bookmarks/',
   head: [
     ['link', { rel: 'icon', href: '/image/favicon.ico' }],
+    /* Global site tag (gtag.js) - Google Analytics */
+    ['script', {async: 'async', src: 'https://www.googletagmanager.com/gtag/js?id=G-W8XGZVJVFS'}],
+    ['script', {}, `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-W8XGZVJVFS');`],
   ],
   host: '0.0.0.0', // dev server 的主机名
   port: 8080, // dev server 的端口
