@@ -1,8 +1,20 @@
-#app .navbar a.home-link::before
-  display: inline-block
-  content: ''
-  width: 1.6rem
-  height: 1.6rem
-  background url('/modem-bookmarks/image/favicon.png')
-  background-size: 100% 100%
-  margin: 0 .1rem -0.1rem 0
+// navbar标题
+#app .navbar a.home-link {
+  span {
+    display inline !important;
+  }
+  &::before {
+    display: inline-block;
+    content: '';
+    width: 1.6rem;
+    height: 1.6rem;
+    background url('/modem-bookmarks/image/favicon.png');
+    background-size: 100% 100%;
+    margin: 0 .1rem -0.1rem 0;
+  }
+}
+
+// css copy
+::selection{background:#f5c442; text-shadow:1px 1px #fff;}
+::-moz-selection{background:#f5c442; text-shadow:1px 1px #fff;}
+::-webkit-selection{background:#f5c442; text-shadow:1px 1px #fff;}
