@@ -82,7 +82,6 @@ module.exports = {
   // evergreen: true, // 如果你的对象只有那些 “常青树” 浏览器，你可以将其设置成 true，这将会禁止 ESNext 到 ES5 的转译以及对 IE 的 polyfills，同时会带来更快的构建速度和更小的文件体积
   plugins: [
     "vuepress-plugin-cat", // 小猫
-    '@vuepress/active-header-links', // 页面滚动时自动激活侧边栏链接的插件(官方)
     '@vuepress/back-to-top' // back-to-top 插件(官方)
   ]
 }
