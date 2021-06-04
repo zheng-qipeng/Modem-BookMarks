@@ -66,7 +66,8 @@ module.exports = {
     repoLabel: 'GitHub',
     docsDir: 'docs',
     docsBranch: 'master',
-    editLinks: true
+    editLinks: true,
+    smoothScroll: true, // 启用页面滚动效果
   },
   markdown: {
     lineNumbers: undefined, // 是否在每个代码块的左侧显示行号
