@@ -13,16 +13,16 @@ export default () => {
         return flag
     }
     if (IsPC()) {
-        let script = document.createElement('script')
-        script.type = 'text/javascript'
-        script.src = "/modem-bookmarks/js/canvas-nest.js"
-        // script.setAttribute('color', '0,0,0')
-        script.setAttribute('opacity', '0.7')
-        script.setAttribute('zIndex', '10')
-        script.setAttribute('count', '18')
-        document.body.appendChild(script)
-        setTimeout(function () {
-            document.getElementsByTagName('canvas')[document.getElementsByTagName('canvas').length - 1].style.pointerEvents = 'none'
-        }, 1000)
+        // 异步加载，避免编译报错
+        import("canvas-nest.js").then(({default: CanvasNest}) => {
+            new CanvasNest(document.body, {
+                color: '0,0,0',
+                pointColor: '0,0,0',
+                opacity: '0.8',
+                count: 18,
+                zIndex: 10,
+            })
+            document.body.style.height = '100vh'
+        })
     }
 }
