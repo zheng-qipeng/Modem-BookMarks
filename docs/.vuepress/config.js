@@ -41,7 +41,7 @@ module.exports = {
         algolia: {},
         nav: require('./nav'),
         sidebar: require('./sidebar').inferSiderbars(), // 自动生成一个仅仅包含了当前页面标题（headers）链接的侧边栏
-        lastUpdated: '上次更新', // string | boolean
+        // lastUpdated: '上次更新', // string | boolean
       },
       // =============================================== English
       '/en/': {
@@ -57,7 +57,7 @@ module.exports = {
         algolia: {},
         nav: require('./navEn'),
         sidebar: require('./sidebarEn').inferSiderbars(),
-        lastUpdated: 'Last Updated', // string | boolean
+        // lastUpdated: 'Last Updated', // string | boolean
       }
     },
     sidebarDepth: 2,
