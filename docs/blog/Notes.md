@@ -1,6 +1,8 @@
 
 # 小笔记
 
+
+
 ## git
 
 + 解决git Permission denied (publickey).
@@ -42,10 +44,56 @@
          2. git rebase --abort（终止） 会回到rebase操作之前的状态，之前的提交的不会丢弃
          3. git rebase --skip（跳过） 会将引起冲突的commit丢弃掉
 
-## 其它
 
-+ npm下包出现 “the operation was rejected by your operating system” 错误
-	- 解决方法： 删除npmrc文件（C:\Users\账户\npmrc文件
+
+## npm
+
+### npm install 报错集锦：
+
+1. npm ERR! Failed at the gifsicle@4.0.1 postinstall script
+    * 解决：执行 npm install gifsicle@4.0.1 --ignore-scripts
+    * 原因：使用--ignore-scripts，会让npm避免执行package.json文件中的scripts脚本，只进行打包
+
+
+2. npm下包出现 “the operation was rejected by your operating system” 错误
+    * 解决方法： 删除npmrc文件（C:\Users\账户\npmrc文件）
+
+
+
+## chrome
+
+**chrome://flags**
+
+1. Force Dark Mode for Web Contents（暗黑模式）
+
+
+
+## windows
+
+### windows 修改鼠标滚轮反向
+
+**修改注册表**
+
+```json
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\HID\"设备实例路径"\FlipFlopWheel=1(启用)
+```
+
+### windows 注册表删除失败
+
+1. 权限-高级-所有者更改为Administrators(替换子容器)
+2. 权限窗口更改完全控制权限(使用可从此对象继承的权限项目替换所有子对象的权限项目)
+
+### windows 测试硬盘速度
+
+**管理员权限**
+
+```shell
+ winsat disk -drive c
+```
+
+
+
+## 其它
 
 + selenium web自动化测试神器
 
