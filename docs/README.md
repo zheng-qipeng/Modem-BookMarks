@@ -7,4 +7,5 @@ footer: MIT Licensed | Copyright © 2019 - zhengqipeng
 ---
 
 <App />
+<GithubCorner />
 
