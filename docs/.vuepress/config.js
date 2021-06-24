@@ -37,8 +37,6 @@ module.exports = {
             buttonText: "刷新"
           }
         },
-        // 当前 locale 的 algolia docsearch 选项
-        algolia: {},
         nav: require('./nav'),
         sidebar: require('./sidebar').inferSiderbars(), // 自动生成一个仅仅包含了当前页面标题（headers）链接的侧边栏
         // lastUpdated: '上次更新', // string | boolean
@@ -54,14 +52,12 @@ module.exports = {
             buttonText: "Refresh"
           }
         },
-        algolia: {},
         nav: require('./navEn'),
         sidebar: require('./sidebarEn').inferSiderbars(),
         // lastUpdated: 'Last Updated', // string | boolean
       }
     },
     sidebarDepth: 2,
-    // displayAllHeaders: true, // 默认值：false
     repo: 'zheng-qipeng/modem-bookmarks',
     repoLabel: 'GitHub',
     docsDir: 'docs',
